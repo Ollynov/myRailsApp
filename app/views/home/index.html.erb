@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Yoshs Blog</title>
+    
+    <%= stylesheet_link_tag "home", media: "all" %>
+  </head>
+  <div class="background-image">
+    <header>
+      <nav class="navigation-bar">
+        <ul class="navigation-items">
+          <li class="nav-list-item"><a href="#about" class="btn btn-info navbar-btn">About</a></li>
+          <li class="nav-list-item"><a href="#contact" class="btn btn-info navbar-btn">Contact</a></li>
+          <li class="nav-list-item"><%= link_to 'Blog', posts_path, class: "btn btn-info navbar-btn" %></li>
+        </ul>
+      </nav>
+    </header>
+    <body id='homeBody'>
+      <div class="first_section">
+        <h1 class="title-1">Hi, I'm Yosh</h1>
+        <h2 class="title-2">Welcome to my website</h2>
+      </div>
+      <footer>
+        <div class="copyright">
+         <p>Copyright (c) 2017 Copyright Aljosha Novakovic All Rights Reserved.</p>
+        </div>
+      </footer>
+    </body>
+  </div>
+</html>
